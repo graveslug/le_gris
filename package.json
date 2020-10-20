@@ -1,0 +1,31 @@
+{
+  "name": "le_gris",
+  "version": "1.0.0",
+  "description": "server/database for mock music label",
+  "main": "(server.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graveslug/le_gris.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graveslug/le_gris/issues"
+  },
+  "homepage": "https://github.com/graveslug/le_gris#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.9"
+  }
+}
