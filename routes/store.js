@@ -1,14 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-//const storeControllers = require('../controllers/stores')
+const storeControllers = require('../controllers/stores')
 
-//router.route('/')
-//    .get(storeControllers.index)
+router.route('/')
+   .get(storeControllers.index)
 
 //!!!! not sure about the naming right now
-//router.route('/storeId')
-//    .get(storeControllers.getProduct)
+router.route('/productId')
+   .get(storeControllers.getProduct)
 
 //router.route('/:userId/cart')
 //    .get(userController.userCart)
