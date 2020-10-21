@@ -33,8 +33,8 @@ db.on('open', ()=>{})
 //     Routes assigned        //
 //============================//
 const adminRoutes = require('./routes/admin')
-const shopRoutes = require('./routes/product')
-// const user = require('./routes/user')
+const storeRoutes = require('./routes/store')
+const userRoutes = require('./routes/user')
 
 //============================//
 //        MiddleWare          //
@@ -47,9 +47,9 @@ app.use(logger('dev'))
 //============================//
 //         Routes             //
 //============================//
+app.use('/store', storeRoutes)
+app.use('/user', userRoutes)
 app.use('/admin', adminRoutes)
-app.use('/store', shopRoutes)
-// app.use('/user', userRoutes)
 
 //============================//
 //         404 errors         //

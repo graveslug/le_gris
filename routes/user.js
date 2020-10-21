@@ -1,17 +1,18 @@
 const express = require('express')
 const router = express.Router()
 
-//usersController
+//const usersController = require('../controllers/users')
 
 /*
-/ empty route that might lead to signup or login
-/newUser
+router.route('/')
+    .get(usersController.index)
+    .post(usersController.newUser)
 
-// /:userId
-/patchUser
-/putUser
-/deleteUser
-
+router.route('/userId')
+    .get(usersController.getUser)
+    .patch(userController.patchUser)
+    .put(userController.putUser)
+    .delte(userController.deleteUser)
 */
 
 module.exports = router
