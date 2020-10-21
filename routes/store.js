@@ -6,7 +6,7 @@ const router = express.Router()
 //router.route('/')
 //    .get(storeControllers.index)
 
-//!!!TODO!!! not sure about the naming right now
+//!!!! not sure about the naming right now
 //router.route('/storeId')
 //    .get(storeControllers.getProduct)
 
@@ -14,7 +14,9 @@ const router = express.Router()
 //    .get(userController.userCart)
 
 //!!TODO!! Figure out how to access users cart
-//    .post(userController.newCart)
-// router.route('/checkout',)
+//    .post(userController.newUserCart)
+
+//!!!Not sure how to approach this one yet
+// router.route('/checkout')
 
 module.exports = router

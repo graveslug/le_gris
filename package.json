@@ -2,7 +2,7 @@
   "name": "le_gris",
   "version": "1.0.0",
   "description": "server/database for mock music label",
-  "main": "(server.js)",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -26,6 +26,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0"
   }
 }
