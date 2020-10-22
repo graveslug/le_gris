@@ -1,17 +1,17 @@
 const express = require('express')
 const router = express.Router()
 
+const userController = require('../controllers/users')
 const storeControllers = require('../controllers/stores')
 
 router.route('/')
    .get(storeControllers.index)
-   // .post(storeControllers.newProduct)
-//!!!! not sure about the naming right now
+
 router.route('/:productId')
    .get(storeControllers.getProduct)
 
-//router.route('/:userId/cart')
-//    .get(userController.userCart)
+router.route('/:userId/cart')
+   .get(userController.userCart)
 
 //!!TODO!! Figure out how to access users cart
 //    .post(userController.newUserCart)

@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-//const adminController = require('../controllers/admins')
+const adminController = require('../controllers/admins')
 
-/*
+
 //!!!Most likely needs some route reworking at some point.
 router.route(/adminId)
     .get(adminController.getProduct)
@@ -13,6 +13,5 @@ router.route(/adminId)
     .delete(adminController.deleteProduct)
 
 //What other things needed?
-*/
 
 module.exports = router

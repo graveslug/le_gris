@@ -8,18 +8,18 @@ const userSchema = new mongoose.Schema(
         },
         email: {
             type: String,
-            requried: true
+            required: true
+        },
+        password: {
+            type: String,
+            required: true
         },
         cart: {
             items: [
                 {
-                    productId: {
+                    _productId: {
                         type: Schema.Types.ObjectId,
                         ref: 'Product',
-                        required: true
-                    },
-                    quantity: {
-                        type: Number,
                         required: true
                     }
                 }
@@ -27,5 +27,6 @@ const userSchema = new mongoose.Schema(
         }
     }
 )
+
 
 module.exports = mongoose.model('User', userSchema)

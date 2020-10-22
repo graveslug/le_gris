@@ -48,8 +48,8 @@ app.use(logger('dev'))
 //         Routes             //
 //============================//
 app.use('/store', storeRoutes)
-// app.use('/user', userRoutes)
-// app.use('/admin', adminRoutes)
+app.use('/user', userRoutes)
+app.use('/admin', adminRoutes)
 
 //============================//
 //         404 errors         //
