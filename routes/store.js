@@ -5,9 +5,9 @@ const storeControllers = require('../controllers/stores')
 
 router.route('/')
    .get(storeControllers.index)
-
+   // .post(storeControllers.newProduct)
 //!!!! not sure about the naming right now
-router.route('/productId')
+router.route('/:productId')
    .get(storeControllers.getProduct)
 
 //router.route('/:userId/cart')

@@ -4,13 +4,22 @@ const Product = require('../models/product')
 module.exports = {
     index: async (req, res, next) => {
         try {
-            //!!!!!Note: is there a findAll?
-            const product = await Product.finds({})
+            const product = await Product.find({})
             res.json({productIndex: product})
         }catch(error){
             res.json({productIndex: error})
         }
     },
+
+    // newProduct: async (req, res, next) => {
+    //     try{
+    //         const newProduct = await new Product(req.body)
+    //         const product = await newProduct.save()
+    //         res.json({newProduct: product})
+    //     }catch(error){
+    //         res.json({newProduct:error})
+    //     }
+    // },
 
     getProduct: async (req, res, next) => {
         try {

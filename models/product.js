@@ -31,12 +31,15 @@ const productSchema = new mongoose.Schema(
             type: String,
             required: true
         },
+        _userId: {
+            type: Schema.Types.ObjectId,
+            ref: 'User',
+            required: true
+        }
     },
     {
         timestamps: true
     }
 )
 
-const Product = mongoose.model('Product', productSchema)
-
-module.exports = Product
+module.exports = mongoose.model('Product', productSchema)

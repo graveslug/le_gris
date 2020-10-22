@@ -25,7 +25,7 @@
 //         const newProduct = req.body
 //         try{
 //             const result = await Store.findByIdAndUpdate(patchProduct, newProduct)
-//             res.status(200).json({patchProduct: result})
+//             res.status(200).json({patchProduct: result}).redirect('/products')
 //         }catch(error){
 //             res.json({patchProduct: error})
 //         }
