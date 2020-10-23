@@ -1,4 +1,4 @@
-const Admin = require('../models/admin')
+const Product = require('../models/product')
 
 module.exports = {
     getProduct: async (req, res, next) => {
@@ -41,7 +41,7 @@ module.exports = {
         try{
         const replaceProduct = req.params.storeId
         const newProduct = req.body
-            const result = await Store.findByIdAndUpdate(replaceProduct, newProduct)
+        const result = await Store.findByIdAndUpdate(replaceProduct, newProduct)
             res.status(200).json({replaceProduct: result})
         }catch(error){
             res.json({replaceProduct: error})

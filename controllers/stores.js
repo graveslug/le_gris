@@ -1,5 +1,6 @@
 const Product = require('../models/product')
 const User = require('../models/user')
+const Cart = require('../models/cart')
 
 module.exports = {
     index: async (req, res, next) => {
@@ -34,7 +35,8 @@ module.exports = {
     addToCart: async (req, res, next) => {
         const { productId, quantity, name, price } = req.body
         const userId = req.params.userId
-        // const user = await User.findById(userId)
+
+         // const user = await User.findById(userId)
         try{
             let cart = await Cart.findOne({ userId })
 
