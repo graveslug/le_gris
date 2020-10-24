@@ -10,10 +10,6 @@ router.route('/')
 router.route('/:productId')
    .get(storeController.getProduct)
 
-//:userId/:productId? Will that work?
-router.route('/:userId/:productId')
-   .get(storeController.addToCart)
-
 //!!!Not sure how to approach this one yet
 // router.route('/checkout')
 
